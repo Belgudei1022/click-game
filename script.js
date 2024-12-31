@@ -19,13 +19,13 @@ btn.addEventListener("click", () => {
   counter.innerHTML = count;
 
   if (!intervalId) {
-    intervalId = setInterval(starttime, 100);
+    intervalId = setInterval(starttime, 1000);
   }
 });
 
 outspace.addEventListener("click", (e) => {
   if (!e.target.classList.contains("click")) {
-    alert("You did well!");
+    alert("You did well !!!!!!!");
     count = 0;
     counter.innerHTML = count;
     clearInterval(intervalId);
