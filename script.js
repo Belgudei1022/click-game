@@ -25,9 +25,7 @@ btn.addEventListener("click", () => {
 
 outspace.addEventListener("click", (e) => {
   if (!e.target.classList.contains("click")) {
-    alert("You did well !!!!!!!");
-    count = 0;
-    counter.innerHTML = count;
+    alert("You Lost !!");
     clearInterval(intervalId);
   }
 });
@@ -65,4 +63,7 @@ reset.addEventListener("click", () => {
 
   minute.innerText = "00";
   second.innerText = "00";
+
+  count = 0;
+  counter.innerHTML = count;
 });
