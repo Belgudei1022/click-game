@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header
+      class="w-full h-[20%] flex items-center justify-center px-[10px] sm:px-[80px]"
+    >
+      <h1 class="counter text-[50px] text-white font-medium">0</h1>
+    </header>
+    <main class="outspace w-full h-[60vh] relative">
+      <button
+        class="click w-[60px] h-[60px] bg-blue-500 text-white rounded-full font-medium absolute z-10"
+      >
+        CLICK
+      </button>
+    </main>
+    <footer class="w-full h-[20%] flex flex-col justify-center items-center">
+      <div class="timer text-[50px] text-white font-medium">
+        <span id="minute">00</span> : <span id="second">00</span>
+      </div>
+      <button class="reset w-[120px] h-[60px] bg-white text-black rounded-3xl">
+        Reset
+      </button>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
